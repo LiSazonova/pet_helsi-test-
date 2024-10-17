@@ -1,0 +1,15 @@
+@import '../utils/variables.scss';
+
+.find-vet {
+    background-color: $primary-color;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+}

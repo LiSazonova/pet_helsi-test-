@@ -1,0 +1,33 @@
+@import '../utils/variables.scss';
+
+.datepicker-input {
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 5px; 
+    font-size: 1rem;
+    color: black; 
+    padding: 15px 20px;
+
+    &:hover {
+        border: 1px solid $primary-color; 
+    }
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container {
+    display: flex;
+    align-items: center;
+}
+
+.react-datepicker__view-calendar-icon {
+    fill: $primary-color;
+}
+
+.react-datepicker-wrapper .react-datepicker__view-calendar-icon input {
+    padding: 8px 8px 8px 35px;
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container .react-datepicker__calendar-icon {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: -0.125em;
+}

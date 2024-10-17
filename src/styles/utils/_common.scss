@@ -1,0 +1,12 @@
+@import '../utils/variables.scss';
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: $bg-color;
+    padding: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

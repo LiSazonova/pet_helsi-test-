@@ -1,0 +1,41 @@
+@import '../utils/variables.scss';
+
+.problems-select {
+    width: 250px;
+
+    .select__control {
+        outline: none;
+
+        &:hover {
+            border: 1px solid $primary-color;
+        }
+    }
+}
+
+.select-placeholder {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.select__menu {
+    max-height: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.select-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.select-option:hover {
+    color: $primary-color;
+}

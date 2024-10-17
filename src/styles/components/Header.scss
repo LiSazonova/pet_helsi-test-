@@ -1,0 +1,75 @@
+@import '../utils/variables.scss';
+@import '../utils/common.scss';
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: $primary-color;
+    color: $font-color;
+    padding: 50px;
+    width: 100%;
+    border-radius: 25px;
+
+    h1 {
+        position: relative;
+        font-size: 3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        span {
+            position: absolute;
+            margin-left: 10px;
+            top: 80px;
+            font-size: 1.8rem;
+            font-weight: 400;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 25px;
+            padding: 0px 20px;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        max-width: 450px;
+        opacity: 0.9;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 70%;
+        gap: 20px;
+    }
+
+    .header-img {
+        max-width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .header-form {
+        display: flex;
+        align-items: center;
+        background-color: $font-color;
+        border-radius: 15px;
+        padding: 15px;
+        height: 70px;
+    }
+}
+
+.dropdown-menu {
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: center;
+}
