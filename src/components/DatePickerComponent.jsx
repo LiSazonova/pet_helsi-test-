@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import '../styles/components/DatePicker.scss';
 import ReactDatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -8,17 +8,15 @@ import uk from 'date-fns/locale/uk';
 registerLocale('uk', uk);
 setDefaultLocale('uk');
 
-const DatePickerComponent = () => {
-  const [startDate, setStartDate] = useState(new Date('2024-02-01'));
-
+const DatePickerComponent = ({ selectedDate, onDateChange }) => {
   return (
     <div className="datepicker-container">
       <div className="datepicker-input-wrapper">
         <span className="calendar-icon" />
         <ReactDatePicker
           showIcon
-          selected={startDate}
-          onChange={date => setStartDate(date)}
+          selected={selectedDate}
+          onChange={onDateChange}
           className="datepicker-input"
           placeholderText="Виберіть дату"
           locale="uk"

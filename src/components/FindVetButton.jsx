@@ -1,7 +1,11 @@
 import '../styles/components/FindVetButton.scss';
 
-const FindVetButton = () => {
-  return <button className="find-vet">Знайти ветеринара</button>;
+const FindVetButton = ({ onClick }) => {
+  return (
+    <button className="find-vet" onClick={onClick}>
+      Знайти ветеринара
+    </button>
+  );
 };
 
 export default FindVetButton;

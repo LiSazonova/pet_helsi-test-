@@ -1,7 +1,7 @@
-@import '../utils/variables.scss';
+@import "../utils/variables.scss";
 
-.problems-select {
-    width: 250px;
+.custom-select {
+    min-width: 300px;
 
     .select__control {
         outline: none;
@@ -19,6 +19,7 @@
     color: black;
     font-size: 0.9rem;
 }
+
 
 .select__menu {
     max-height: none;

@@ -59,6 +59,7 @@
     .header-form {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         background-color: $font-color;
         border-radius: 15px;
         padding: 15px;
@@ -67,9 +68,8 @@
 }
 
 .dropdown-menu {
-    position: fixed;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    
     gap: 10px;
     align-items: center;
 }
